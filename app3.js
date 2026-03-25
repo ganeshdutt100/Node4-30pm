@@ -7,16 +7,18 @@ const server = http.createServer((req, res) => {
     res.write(`
  <h1>  i am Home page </h1>
     `);
+    return res.end();
   } else if (req.url === "/about") {
     res.write(`
  <h1>  i am About page </h1>
     `);
+    return res.end();
   } else if (req.url === "/contact") {
     res.write(`
  <h1>i am contact page </h1>
     `);
+    return res.end();
   }
-  return res.end();
 });
 
 server.listen(3000, () => {
