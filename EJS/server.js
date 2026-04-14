@@ -12,7 +12,7 @@ const PORT = 3000;
 
 app.get("/", (req, res) => {
   const userName = "Avneesh"; // db
-  res.render("index", { name: userName, age: 22 });
+  res.render("index", { name: userName, age: 12 });
 });
 
 app.listen(PORT, () => {

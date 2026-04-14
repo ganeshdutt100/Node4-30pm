@@ -12,6 +12,18 @@
     </h1>
     <p>Age : <%= age %>
     </p>
+
+    <p>
+        <% if (age> 18) { %>
+            <p> You are an adult.</p>
+            <% } else { %>
+                <p> You are a minor</p>
+                <%}%>
+
+
+    </p>
+    <!-- <%- ... %> -->
+    <!-- <%- "<b>name</b>" %> -->
 </body>
 
 </html>

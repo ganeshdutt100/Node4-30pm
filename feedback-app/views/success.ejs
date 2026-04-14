@@ -1,0 +1,14 @@
+<%- include('components/navbar.ejs') %>
+    <div class="max-w-md mx-auto  bg-green-100 p-8 rounded-2xl border border-green-500 shadow">
+        <h2 class="text-2xl font-bold text-green-700">Thanks <%= data.name %>
+        </h2>
+        <p class=" m-2  text-green-600">Humne apka message recieve kar liya hain </p>
+        <div class="mt-4 text-sm text-gray-500 italic">
+            "<%= data.message %>"
+        </div>
+        <p class="mt-4 text-sm text-gray-500 italic">Humne apka email <strong>
+                <%= data.email %>
+            </strong> bhi recieve kar liya hain </p>
+        <a href="/" class="text-blue-700 underline text-sm italic ">Feedback Form</a>
+    </div>
+    <%- include('components/footer.ejs') %>
